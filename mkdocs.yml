@@ -1,0 +1,43 @@
+site_name: TAKANORI NOTE
+site_description: "Automatic documentation from sources, for MkDocs."
+site_url: https://takavfx.github.io/Takanori-Note/
+repo_url: "https://github.com/takavfx/Takanori-Note"
+repo_name: "takavfx/Takanori-Note"
+markdown_extensions:
+  - admonition # アノテーションブロックを有効
+  - codehilite # コードハイライトを有効
+  - footnotes # 下部への注釈表記を有効
+  - toc:
+      permalink: true # パーマリンクを有効
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+        - ja
+  - mkdocstrings:
+      handlers:
+        python:
+          setup_commands:
+            - import sys
+            - sys.path.append("docs\20_Python\Snippets")
+theme: 
+  name: material # mkdocs-materialテーマを有効
+  custom_dir: overrides
+  features:
+    - tabs
+  # palette:
+  #   scheme: preference
+nav:
+  - Home:
+    - index.md
+    - about.md
+  - Houdini:
+    - Home: 10_Houdini/index.md
+  - Maya:
+    - Home: 10_Maya/index.md
+  - Python:
+    - Home: 20_Python/index.md
+    - CLI Tool: 20_Python/clitool.md
+  - Pipeline:
+    - Home: 20_Pipeline/index.md
