@@ -3,41 +3,76 @@ site_description: "Automatic documentation from sources, for MkDocs."
 site_url: https://takavfx.github.io/Takanori-Note/
 repo_url: "https://github.com/takavfx/Takanori-Note"
 repo_name: "takavfx/Takanori-Note"
+
+# Theme
+theme: 
+  name: material # mkdocs-materialテーマを有効
+  custom_dir: overrides
+  features:
+    - tabs
+  language: ja
+  name: material
+  palette:
+    # scheme: preference
+    primary: teal
+    accent: light-green
+# Navigation
+nav:
+  - Home:
+    - index.md
+  - About:
+    - about.md
+  - Houdini:
+    - Home: 10_Houdini/index.md
+  - Maya:
+    - Home: 10_Maya/index.md
+  - Programming:
+    - Python: 
+      - Home: 20_Python/index.md
+      - CLI:
+        - How To Build: 20_Python/CLI/how-to-build.md
+  - Pipeline:
+    - Home: 20_Pipeline/index.md
+  # - Research:
+  #   - MachineLearing: 30_MachineLearning/index.md
+  - DevEnv:
+    - Editor:
+      - VSCode: 40_VSCode/index.md
+
+# Extensions
 markdown_extensions:
   - admonition # アノテーションブロックを有効
   - codehilite # コードハイライトを有効
   - footnotes # 下部への注釈表記を有効
+  - pymdownx.arithmatex # Arithmatex統合を有効
+  - pymdownx.mark # ハイライト機能を有効
+  - pymdownx.details # 折り畳みアノテーションを有効
+  - pymdownx.emoji: # 絵文字を有効
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.emoji/fontawesome_markdow
   - toc:
       permalink: true # パーマリンクを有効
+  # - awesome-pages
+
+
+# Plugins
 plugins:
   - search:
       separator: '[\s\-\.]+'
       lang:
         - en
         - ja
-  - mkdocstrings:
-      handlers:
-        python:
-          setup_commands:
-            - import sys
-            - sys.path.append("docs\20_Python\Snippets")
-theme: 
-  name: material # mkdocs-materialテーマを有効
-  custom_dir: overrides
-  features:
-    - tabs
-  # palette:
-  #   scheme: preference
-nav:
-  - Home:
-    - index.md
-    - about.md
-  - Houdini:
-    - Home: 10_Houdini/index.md
-  - Maya:
-    - Home: 10_Maya/index.md
-  - Python:
-    - Home: 20_Python/index.md
-    - CLI Tool: 20_Python/clitool.md
-  - Pipeline:
-    - Home: 20_Pipeline/index.md
+  # - mkdocstrings:
+  #     handlers:
+  #       python:
+  #         setup_commands:
+  #           - import sys
+  #           - sys.path.append("docs/20_Python/snippets")
+      # watch:
+      #   - snippets
+
+
+# Extra Customization
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML

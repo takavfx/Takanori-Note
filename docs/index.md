@@ -1,1 +1,1 @@
-# Welcome to Takanori Nodes
+# Welcome to TAKANORI NOTE
