@@ -2,12 +2,32 @@
 
 ## 基本
 
-1. pip installできる環境を作る。
+### 1. pip installできる環境を作る。
+
+以下の様にインストールできる環境を作る。
 
 ```bash
+pip install sample-cli
 ```
 
-2. setup.pyを書く
+GitHubなどにあげておいて、レポジトリから直接インストールする場合は次のような感じ。
+
+```bash
+pip install git+https://github.com/takavfx/sample-cli
+```
+
+#### ディレクトリ構成
+
+```
+- package_root
+    |- setup.py
+    |- src
+        |- samplecli
+            |- __init__.py
+            |- cli.py
+```
+
+### 2. setup.pyを書く
 
 ```python
 import os
@@ -27,7 +47,7 @@ test_requirements = [
 
 about = {}
 with open("src", "r") as f:
-    return 
+    exec(f, about)
 
 setup(
     name="mytool-cli",
@@ -52,3 +72,21 @@ setup(
 
     ```<command> = <cliパッケージ>.<CLIモジュール>:<実行関数名>
     ```
+
+### 3. ソースを書く
+
+```python
+__title__ = "sample-cli"
+__version__ = "1.0.0"
+__description__ = "Sample python package for Command Line tool creation by Python"
+__url__ = "https://github.com/takavfx/sample-cli"
+```
+
+```python
+commands = [
+    "format"
+]
+
+def main():
+    print("hello, world")
+```

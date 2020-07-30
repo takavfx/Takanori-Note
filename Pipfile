@@ -13,6 +13,7 @@ mkdocs-material = "*"
 pyside2 = "*"
 mkdocstrings = "*"
 mkdocs-awesome-pages-plugin = "*"
+mkdocs-macros-plugin = "*"
 
 [requires]
 python_version = "3.8"

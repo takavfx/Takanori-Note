@@ -1,1 +1,4 @@
-# Welcome to TAKANORI NOTE
+---
+template: home.html
+title: Material for MkDocs
+---

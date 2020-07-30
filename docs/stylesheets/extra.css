@@ -1,0 +1,18 @@
+body {
+    counter-reset: number 0;
+}
+
+div.md-grid{
+    max-width: 75rem;
+  }
+
+
+/* h2::after {
+    counter-increment: number 1;
+    content: counter(number) ". ";
+}
+
+h3::before {
+    content: counter(number, "-") " ";
+    counter-increment: number 1;
+} */
