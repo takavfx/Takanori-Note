@@ -1,18 +1,38 @@
-body {
-    counter-reset: number 0;
-}
-
 div.md-grid{
     max-width: 75rem;
   }
 
-
-/* h2::after {
-    counter-increment: number 1;
-    content: counter(number) ". ";
+  /* 見出し1 */
+.md-container h1 {
+    counter-reset: h2;
 }
 
-h3::before {
-    content: counter(number, "-") " ";
-    counter-increment: number 1;
-} */
+/* 見出し2 */
+.md-container h2 {
+    counter-reset: h3; 
+    counter-increment: h2;
+    border-bottom: double 4px;
+}
+
+/* 見出し2のカウンター */
+.md-container h2::before {
+    counter-reset: h3;
+    content: counter(h2) ". ";
+}
+
+/* 見出し3 */
+.md-container h3 {
+    margin-right: .3em;
+    counter-increment: h3;
+    border-bottom: inset 1px;
+}
+
+/* 見出し3のカウンター */
+.md-container h3::before {
+    content: counter(h2) "-" counter(h3) ". ";
+}
+
+/* 見出し4 */ 
+.md-container h4 {
+    border-bottom: dotted 1px; 
+}
