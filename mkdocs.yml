@@ -30,13 +30,17 @@ nav:
     - About Me: 00_About/about_me.md
   - Houdini:
     - Houdini: 10_Houdini/index.md
+    - Houdini VEX:
+      - Houdini VEX Basics: 10_Houdini/VEX/basics.md
+      - Houdini VEX Snippets: 10_Houdini/VEX/snippets.md
+    - Houdini Python:
+      - Houdini Python Basics: 10_Houdini/Python/python.md
   # - Maya:
   #   - Home: 10_Maya/index.md
   - Programming:
     - Python: 
       - Python: 20_Python/index.md
-      - Build CLI Tool:
-        - How To Build: 20_Python/CLI/how-to-build.md
+      - Build CLI Tool: 20_Python/CLI/how-to-build.md
   # - Pipeline:
   #   - Pipeline: 20_Pipeline/index.md
   # - Research:
@@ -55,6 +59,7 @@ markdown_extensions:
   - admonition # アノテーションブロックを有効
   - codehilite # コードハイライトを有効
   - footnotes # 下部への注釈表記を有効
+  - tables # テーブルを有効
   - pymdownx.arithmatex # Arithmatex統合を有効
   - pymdownx.mark # ハイライト機能を有効
   - pymdownx.details # 折り畳みアノテーションを有効
