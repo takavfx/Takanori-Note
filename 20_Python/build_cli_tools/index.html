@@ -715,6 +715,33 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pip-install_1" class="md-nav__link">
+    pip installをして試す
+  </a>
+  
+    <nav class="md-nav" aria-label="pip installをして試す">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pip-install_2" class="md-nav__link">
+    pip installする
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    コマンドを実行する
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -998,6 +1025,33 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#pip-install_1" class="md-nav__link">
+    pip installをして試す
+  </a>
+  
+    <nav class="md-nav" aria-label="pip installをして試す">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pip-install_2" class="md-nav__link">
+    pip installする
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    コマンドを実行する
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1113,6 +1167,20 @@
 <p>上記のサンプルseup.pyファイルで、 <code>"mytoolcli = mytoolcli.cli:main"</code> と宣言している。そのため、ここでは、コマンドライン上で <code>mytool</code> と実行すると、この <code>main()</code> 関数が呼ばれることになる。
 もし、別の関数を実行したい場合には、setup.pyの部分とこの <code>main()</code> 関数名を変更する。</p>
 </div>
+<h3 id="pip-install_1">pip installをして試す<a class="headerlink" href="#pip-install_1" title="Permanent link">&para;</a></h3>
+<h4 id="pip-install_2">pip installする<a class="headerlink" href="#pip-install_2" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code><span class="err">pip install -e .</span>
+</code></pre></div>
+
+
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><code>-e</code> は <code>--editable</code> オプションの略で、これを使用してインストールを行うと、ローカルの変更が即時インストール環境に反映される。開発時には有利だが、テスト時のimportテストなどを行う場合は誤動作を起こしやすいので注意。</p>
+</div>
+<h4 id="_4">コマンドを実行する<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<div class="codehilite"><pre><span></span><code>mytool
+<span class="c1"># &gt; hello, world</span>
+</code></pre></div>
                 
               
               
