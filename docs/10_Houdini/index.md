@@ -4,7 +4,7 @@
 
 Contents          | Description
 ----------------- | ----------------------------------------
-Houdini Cookbook  | Houdiniの目的別作成レシピ
+Houdini Cookbook  | Houdiniの目的別作成レシピ (追加予定)
 Houdini VEX       | VEXメモ (スニペット)
 Houdini Python    | Pythonメモ (スニペット)
 Houdini Tools     | 自分が作成したものも含む、Houdiniツールメモ

@@ -14,6 +14,7 @@ pyside2 = "*"
 mkdocstrings = "*"
 mkdocs-awesome-pages-plugin = "*"
 mkdocs-macros-plugin = "*"
+markdown-blockdiag = "*"
 
 [requires]
 python_version = "3.8"
