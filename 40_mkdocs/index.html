@@ -19,7 +19,7 @@
     
     
       
-        <title>mkdocs - TAKANORI NOTE</title>
+        <title>mkdocs Setup - TAKANORI NOTE</title>
       
     
     
@@ -100,7 +100,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              mkdocs
+              mkdocs Setup
             
           </span>
         </div>
@@ -799,14 +799,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        mkdocs
+        mkdocs Setup
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
         </span>
       </label>
     
-    <a href="./" title="mkdocs" class="md-nav__link md-nav__link--active">
-      mkdocs
+    <a href="./" title="mkdocs Setup" class="md-nav__link md-nav__link--active">
+      mkdocs Setup
     </a>
     
       
@@ -825,14 +825,47 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plugins" class="md-nav__link">
-    Plugins
+  <a href="#_1" class="md-nav__link">
+    プラグイン導入の基本
   </a>
+  
+    <nav class="md-nav" aria-label="プラグイン導入の基本">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    各種プラグインのパッケージをインストールする
+  </a>
+  
+    <nav class="md-nav" aria-label="各種プラグインのパッケージをインストールする">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    インストール方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs_1" class="md-nav__link">
+    mkdocsでプラグインの使用を宣言する
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     マクロを入れる
   </a>
   
@@ -840,7 +873,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     プラグインをインストールする
   </a>
   
@@ -899,14 +932,47 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#plugins" class="md-nav__link">
-    Plugins
+  <a href="#_1" class="md-nav__link">
+    プラグイン導入の基本
   </a>
+  
+    <nav class="md-nav" aria-label="プラグイン導入の基本">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    各種プラグインのパッケージをインストールする
+  </a>
+  
+    <nav class="md-nav" aria-label="各種プラグインのパッケージをインストールする">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    インストール方法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocs_1" class="md-nav__link">
+    mkdocsでプラグインの使用を宣言する
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     マクロを入れる
   </a>
   
@@ -914,7 +980,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     プラグインをインストールする
   </a>
   
@@ -945,11 +1011,59 @@
                   
                 
                 
-                <h1 id="mkdocs">mkdocs<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
-<h2 id="plugins">Plugins<a class="headerlink" href="#plugins" title="Permanent link">&para;</a></h2>
-<h2 id="_1">マクロを入れる<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="_2">プラグインをインストールする<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>pip install 
+                <h1 id="mkdocs">mkdocsセットアップ<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
+<h2 id="_1">プラグイン導入の基本<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="_2">各種プラグインのパッケージをインストールする<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>プラグインは各自インストールしたり、テーマに付属しているものがある。
+例えば、mkdocs-materialテーマには独自のsearchプラグインが導入されていたりするため、個別インストールなしにこのプラグインを使用することができる。</p>
+<table>
+<thead>
+<tr>
+<th>プラグイン名</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/fralau/mkdocs_macros_plugin">mkdocs-macros-plugin</a></td>
+<td>マクロを有効にするプラグイン。Pythonで処理を自由に書いてマクロを組める。</td>
+</tr>
+<tr>
+<td><a href="https://squidfunk.github.io/mkdocs-material/setup/setting-up-site-search/">search (mkdocs-material)</a></td>
+<td>mkdocs-materialテーマの内蔵プラグイン。全文検索ができる。</td>
+</tr>
+<tr>
+<td><a href="https://pawamoy.github.io/mkdocstrings/">mkdocstrings</a></td>
+<td>Pythonコードを解析してドキュメント生成してくれる。mkdocs-materialと一緒に動作するプラグインであるため注意。</td>
+</tr>
+</tbody>
+</table>
+<h5 id="_3">インストール方法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
+<p>基本的にはPIPインストールすることで動作環境を作る。(例: mkdocs-macros-plugin)</p>
+<div class="codehilite"><pre><span></span><code>pip install mkdocs-macros-plugin
+</code></pre></div>
+
+
+<h3 id="mkdocs_1">mkdocsでプラグインの使用を宣言する<a class="headerlink" href="#mkdocs_1" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">search</span><span class="p">:</span>
+      <span class="nt">separator</span><span class="p">:</span> <span class="s">&#39;[\s\-\.]+&#39;</span>
+      <span class="nt">lang</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">en</span>
+        <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">ja</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">macros</span>
+  <span class="p p-Indicator">-</span> <span class="nt">mkdocstrings</span><span class="p">:</span>
+      <span class="nt">handlers</span><span class="p">:</span>
+        <span class="nt">python</span><span class="p">:</span>
+          <span class="nt">setup_commands</span><span class="p">:</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">import sys</span>
+            <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sys.path.append(&quot;src&quot;)</span>
+</code></pre></div>
+
+
+<h2 id="_4">マクロを入れる<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="_5">プラグインをインストールする<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code>pip install mkdocs-macros-plugin
 </code></pre></div>
                 
               
