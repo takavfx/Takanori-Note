@@ -11,21 +11,21 @@
         <meta name="description" content="Automatic documentation from sources, for MkDocs.">
       
       
-        <link rel="canonical" href="https://takavfx.github.io/Takanori-Note/10_Houdini/Python/python/">
+        <link rel="canonical" href="https://takavfx.github.io/Takanori-Note/20_Python/build_python_packages/">
       
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.0">
     
     
       
-        <title>Houdini Python Basics - TAKANORI NOTE</title>
+        <title>Build Python Packages - TAKANORI NOTE</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.b5d04df8.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b5d04df8.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9ab2c1f8.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.9ab2c1f8.min.css">
       
       
         
@@ -45,7 +45,7 @@
     
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
     
       
@@ -71,11 +71,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#houdini-python" class="md-skip">
-          コンテンツにスキップ
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -100,7 +95,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Houdini Python Basics
+              Build Python Packages
             
           </span>
         </div>
@@ -173,7 +168,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../.." class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           Home
         </a>
       
@@ -186,7 +181,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../00_About/about_this/" class="md-tabs__link">
+        <a href="../../00_About/about_this/" class="md-tabs__link">
           About
         </a>
       
@@ -199,7 +194,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../" class="md-tabs__link md-tabs__link--active">
+        <a href="../../10_Houdini/" class="md-tabs__link">
           Houdini
         </a>
       
@@ -216,7 +211,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../20_Python/" class="md-tabs__link">
+        <a href="../" class="md-tabs__link md-tabs__link--active">
           Programming
         </a>
       
@@ -239,7 +234,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../../40_VSCode/extensions/" class="md-tabs__link">
+        <a href="../../40_VSCode/extensions/" class="md-tabs__link">
           DevEnv
         </a>
       
@@ -320,7 +315,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Index" class="md-nav__link">
+    <a href="../.." title="Index" class="md-nav__link">
       Index
     </a>
   </li>
@@ -362,7 +357,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../00_About/about_this/" title="About This Note" class="md-nav__link">
+    <a href="../../00_About/about_this/" title="About This Note" class="md-nav__link">
       About This Note
     </a>
   </li>
@@ -374,7 +369,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../00_About/about_me/" title="About Me" class="md-nav__link">
+    <a href="../../00_About/about_me/" title="About Me" class="md-nav__link">
       About Me
     </a>
   </li>
@@ -389,12 +384,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Houdini
@@ -418,7 +411,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../" title="Houdini" class="md-nav__link">
+    <a href="../../10_Houdini/" title="Houdini" class="md-nav__link">
       Houdini
     </a>
   </li>
@@ -455,7 +448,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../VEX/basics/" title="Houdini VEX Basics" class="md-nav__link">
+    <a href="../../10_Houdini/VEX/basics/" title="Houdini VEX Basics" class="md-nav__link">
       Houdini VEX Basics
     </a>
   </li>
@@ -467,7 +460,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../VEX/snippets/" title="Houdini VEX Snippets" class="md-nav__link">
+    <a href="../../10_Houdini/VEX/snippets/" title="Houdini VEX Snippets" class="md-nav__link">
       Houdini VEX Snippets
     </a>
   </li>
@@ -482,12 +475,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
     
     <label class="md-nav__link" for="nav-3-3">
       Houdini Python
@@ -509,20 +500,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Houdini Python Basics" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../10_Houdini/Python/python/" title="Houdini Python Basics" class="md-nav__link">
       Houdini Python Basics
     </a>
-    
   </li>
 
         
@@ -532,7 +514,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../snippets.md" title="Houdini Python Snippets" class="md-nav__link">
+    <a href="../../10_Houdini/snippets.md" title="Houdini Python Snippets" class="md-nav__link">
       Houdini Python Snippets
     </a>
   </li>
@@ -552,10 +534,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Programming
@@ -577,10 +561,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" type="checkbox" id="nav-4-1" checked>
     
     <label class="md-nav__link" for="nav-4-1">
       Python
@@ -604,7 +590,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../20_Python/" title="Python" class="md-nav__link">
+    <a href="../" title="Python" class="md-nav__link">
       Python
     </a>
   </li>
@@ -614,11 +600,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../20_Python/build_python_packages/" title="Build Python Packages" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Build Python Packages" class="md-nav__link md-nav__link--active">
       Build Python Packages
     </a>
+    
   </li>
 
         
@@ -628,7 +621,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../20_Python/build_cli_tools/" title="Build CLI Tools" class="md-nav__link">
+    <a href="../build_cli_tools/" title="Build CLI Tools" class="md-nav__link">
       Build CLI Tools
     </a>
   </li>
@@ -725,7 +718,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../40_VSCode/extensions/" title="VS Code Extensions" class="md-nav__link">
+    <a href="../../40_VSCode/extensions/" title="VS Code Extensions" class="md-nav__link">
       VS Code Extensions
     </a>
   </li>
@@ -797,7 +790,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../40_mkdocs/" title="mkdocs" class="md-nav__link">
+    <a href="../../40_mkdocs/" title="mkdocs" class="md-nav__link">
       mkdocs
     </a>
   </li>
@@ -825,27 +818,12 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-    
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/takavfx/Takanori-Note/edit/master/docs/10_Houdini/Python/python.md" title="編集" class="md-content__button md-icon">
+                  <a href="https://github.com/takavfx/Takanori-Note/edit/master/docs/20_Python/build_python_packages.md" title="編集" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -853,7 +831,9 @@
                   
                 
                 
-                <h1 id="houdini-python">Houdini Python<a class="headerlink" href="#houdini-python" title="Permanent link">&para;</a></h1>
+                  <h1>Build Python Packages</h1>
+                
+                
                 
               
               
@@ -872,7 +852,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../VEX/snippets/" title="Houdini VEX Snippets" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../" title="Python" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -881,19 +861,19 @@
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                Houdini VEX Snippets
+                Python
               </div>
             </div>
           </a>
         
         
-          <a href="../../../20_Python/" title="Python" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../build_cli_tools/" title="Build CLI Tools" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                Python
+                Build CLI Tools
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -951,15 +931,15 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.92ffa368.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.5123e3d4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f"}</script>
+      <script src="../../assets/javascripts/vendor.92ffa368.min.js"></script>
+      <script src="../../assets/javascripts/bundle.5123e3d4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\s\\-\u3000\u3001\u3002\uff0c\uff0e]+", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f"}</script>
       
       <script>
         app = initialize({
-          base: "../../..",
+          base: "../..",
           features: ["tabs", "instant"],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

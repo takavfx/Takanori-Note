@@ -43,6 +43,8 @@
     
     
     
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
     
@@ -68,6 +70,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#python" class="md-skip">
+          コンテンツにスキップ
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -506,6 +513,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../10_Houdini/snippets.md" title="Houdini Python Snippets" class="md-nav__link">
+      Houdini Python Snippets
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -581,10 +600,45 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Python
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
     
     <a href="./" title="Python" class="md-nav__link md-nav__link--active">
       Python
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -595,8 +649,20 @@
 
 
   <li class="md-nav__item">
-    <a href="CLI/how-to-build/" title="Build CLI Tool" class="md-nav__link">
-      Build CLI Tool
+    <a href="build_python_packages/" title="Build Python Packages" class="md-nav__link">
+      Build Python Packages
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="build_cli_tools/" title="Build CLI Tools" class="md-nav__link">
+      Build CLI Tools
     </a>
   </li>
 
@@ -792,6 +858,38 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    Table of Contents
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -805,9 +903,26 @@
                   
                 
                 
-                  <h1>Python</h1>
-                
-                <p>test</p>
+                <h1 id="python">Python<a class="headerlink" href="#python" title="Permanent link">&para;</a></h1>
+<h2 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Contents</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Build Python Packages</td>
+<td>Pip installできるPythonパッケージを作る方法</td>
+</tr>
+<tr>
+<td>Build CLI Tools</td>
+<td>PythonでCLIツールを作る方法</td>
+</tr>
+</tbody>
+</table>
                 
               
               
@@ -841,13 +956,13 @@
           </a>
         
         
-          <a href="CLI/how-to-build/" title="Build CLI Tool" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="build_python_packages/" title="Build Python Packages" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   次
                 </span>
-                Build CLI Tool
+                Build Python Packages
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -911,7 +1026,7 @@
       <script>
         app = initialize({
           base: "..",
-          features: ["tabs"],
+          features: ["tabs", "instant"],
           search: Object.assign({
             worker: "../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
