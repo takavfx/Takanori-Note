@@ -879,6 +879,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#mkdocsmd" class="md-nav__link">
+    mkdocs.mdで使用を宣言する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mainpy" class="md-nav__link">
+    main.pyを作成する
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -986,6 +1000,20 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#mkdocsmd" class="md-nav__link">
+    mkdocs.mdで使用を宣言する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mainpy" class="md-nav__link">
+    main.pyを作成する
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1065,6 +1093,29 @@
 <h3 id="_5">プラグインをインストールする<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span><code>pip install mkdocs-macros-plugin
 </code></pre></div>
+
+
+<h3 id="mkdocsmd">mkdocs.mdで使用を宣言する<a class="headerlink" href="#mkdocsmd" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">macros</span>
+</code></pre></div>
+
+
+<h3 id="mainpy">main.pyを作成する<a class="headerlink" href="#mainpy" title="Permanent link">&para;</a></h3>
+<p>main.pyをルートディレクトリに作成し、 <code>define_env(env)</code> 関数を作成する。</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">define_env</span><span class="p">(</span><span class="n">env</span><span class="p">):</span>
+    <span class="nd">@env</span><span class="o">.</span><span class="n">filter</span>
+    <span class="k">def</span> <span class="nf">vimeo</span><span class="p">(</span><span class="n">videoid</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;VimeoのVideoIDを引数にVimeoの埋め込みコンテンツを返す。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;&lt;iframe src=&quot;https://player.vimeo.com/video/</span><span class="si">{</span><span class="n">videoid</span><span class="si">}</span><span class="s1">&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span>
+</code></pre></div>
+
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ここら辺は、<a href="https://fereria.github.io/reincarnation_tech/10_Programming/99_Documentation/02_mkdocs_macro/">Reincanation+#Techの記事</a>が詳しいので、そちらを参照。</p>
+</div>
                 
               
               
