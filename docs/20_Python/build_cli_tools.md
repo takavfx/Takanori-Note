@@ -2,7 +2,7 @@
 
 ## 基本
 
-### 1. pip installできる環境を作る。
+### pip installできる環境を作る。
 
 以下の様にインストールできる環境を作る。
 
@@ -16,6 +16,7 @@ GitHubなどにあげておいて、レポジトリから直接インストー�
 pip install git+https://github.com/takavfx/sample-cli
 ```
 
+
 #### ディレクトリ構成
 
 ```
@@ -27,7 +28,7 @@ pip install git+https://github.com/takavfx/sample-cli
             |- cli.py
 ```
 
-### 2. setup.pyを書く
+### setup.pyを書く
 
 ```python
 import os
@@ -58,12 +59,15 @@ setup(
     package_dir={"": "src"},
     entry_points={
         "console_scripts": [
-            "mytoolcli = mytoolcli.cli:main"
+            "mytool = mytoolcli.cli:main"
         ]
     },
     tests_require=test_requirements,
 )
 ```
+
+!!! note
+    [setup.pyについて。](https://docs.python.org/ja/3/distutils/setupscript.html)
 
 !!! note
 
@@ -73,7 +77,9 @@ setup(
     ```<command> = <cliパッケージ>.<CLIモジュール>:<実行関数名>
     ```
 
-### 3. ソースを書く
+### ソースを書く
+
+#### `__init__.py`
 
 ```python
 __title__ = "sample-cli"
@@ -82,11 +88,13 @@ __description__ = "Sample python package for Command Line tool creation by Pytho
 __url__ = "https://github.com/takavfx/sample-cli"
 ```
 
-```python
-commands = [
-    "format"
-]
+#### src/samplecli/cli.py
 
+```python
 def main():
     print("hello, world")
 ```
+
+!!! note
+    上記のサンプルseup.pyファイルで、 `"mytoolcli = mytoolcli.cli:main"` と宣言している。そのため、ここでは、コマンドライン上で `mytool` と実行すると、この `main()` 関数が呼ばれることになる。
+    もし、別の関数を実行したい場合には、setup.pyの部分とこの `main()` 関数名を変更する。

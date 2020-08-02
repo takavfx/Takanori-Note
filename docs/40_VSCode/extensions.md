@@ -8,7 +8,7 @@ VS Codeのエクステンションメモ。とりあえず新しい環境では�
 
 ## Language
 
-## C/C++
+### C/C++
 
 - [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 
@@ -16,7 +16,7 @@ VS Codeのエクステンションメモ。とりあえず新しい環境では�
 
 - [CMake Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools)
 
-## C#
+### C#
 
 - [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
 

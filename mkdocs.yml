@@ -10,15 +10,16 @@ theme:
   custom_dir: overrides
   features:
     - tabs
+    - instant
   language: ja
   name: material
   palette:
     scheme: preference
     primary: deep orange
     accent: orange
-  custom_dir: overrides
 
 extra_css:
+  - https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
   - stylesheets/extra.css
 
 # Navigation
@@ -35,12 +36,14 @@ nav:
       - Houdini VEX Snippets: 10_Houdini/VEX/snippets.md
     - Houdini Python:
       - Houdini Python Basics: 10_Houdini/Python/python.md
+      - Houdini Python Snippets: 10_Houdini/snippets.md
   # - Maya:
   #   - Home: 10_Maya/index.md
   - Programming:
     - Python: 
       - Python: 20_Python/index.md
-      - Build CLI Tool: 20_Python/CLI/how-to-build.md
+      - Build Python Packages: 20_Python/build_python_packages.md
+      - Build CLI Tools: 20_Python/build_cli_tools.md
   # - Pipeline:
   #   - Pipeline: 20_Pipeline/index.md
   # - Research:
