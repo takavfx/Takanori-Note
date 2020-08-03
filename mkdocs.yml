@@ -48,8 +48,12 @@ nav:
       - Build CLI Tools: 20_Python/build_cli_tools.md
   # - Pipeline:
   #   - Pipeline: 20_Pipeline/index.md
-  # - Research:
-  #   - MachineLearing: 30_MachineLearning/index.md
+  - Research:
+    - Machine Learing:
+      - 30_MachineLearning/index.md
+      - TensorFlow:
+        - TensorFlow: 30_MachineLearning/20_TensorFlow/index.md
+        - TensorFlow C++: 30_MachineLearning/20_TensorFlow/cpp.md
   - DevEnv:
     - Editor:
       - VS Code:
