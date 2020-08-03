@@ -74,7 +74,8 @@ setup(
     entry_points
     このentry_points辞書に、コンソールで入力した際の実行スクリプトを記述する。
 
-    ```<command> = <cliパッケージ>.<CLIモジュール>:<実行関数名>
+    ```bash
+    <command> = <cliパッケージ>.<CLIモジュール>:<実行関数名>
     ```
 
 ### ソースを書く
@@ -98,3 +99,23 @@ def main():
 !!! note
     上記のサンプルseup.pyファイルで、 `"mytoolcli = mytoolcli.cli:main"` と宣言している。そのため、ここでは、コマンドライン上で `mytool` と実行すると、この `main()` 関数が呼ばれることになる。
     もし、別の関数を実行したい場合には、setup.pyの部分とこの `main()` 関数名を変更する。
+
+
+### pip installをして試す
+
+#### pip installする
+
+```
+pip install -e .
+```
+
+!!! hint
+    `-e` は `--editable` オプションの略で、これを使用してインストールを行うと、ローカルの変更が即時インストール環境に反映される。開発時には有利だが、テスト時のimportテストなどを行う場合は誤動作を起こしやすいので注意。
+
+
+#### コマンドを実行する
+
+```bash
+mytool
+# > hello, world
+```

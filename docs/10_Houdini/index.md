@@ -5,20 +5,34 @@
 Contents          | Description
 ----------------- | ----------------------------------------
 Houdini Cookbook  | Houdiniの目的別作成レシピ (追加予定)
-Houdini VEX       | VEXメモ (スニペット)
-Houdini Python    | Pythonメモ (スニペット)
-Houdini Tools     | 自分が作成したものも含む、Houdiniツールメモ
+[Houdini VEX](VEX/basics)       | VEXメモ (スニペット)
+[Houdini Python](Python/basics)    | Pythonメモ (スニペット)
+Houdini Tools     | 自分が作成したものも含む、Houdiniツールメモ (追加予定)
 
 ## References
 
 ### Sites
 
 - [SideFX](https://www.sidefx.com)
+- [Qiita](https://qiita.com/tags/houdini)
 
 ### Forum
 
 - [Forums | SideFX](https://www.sidefx.com/forum/)
 - [od|force forums](https://forums.odforce.net)
+
+### Blogs
+
+#### 企業
+
+- [DF TALK](https://dftalk.jp/?tag=houdini)
+- [KLablog](https://www.klab.com/jp/blog/creative/category/?=Houdini)
+- [SEGA TECH BLOG](http://techblog.sega.jp/archive/category/Houdini)
+- [インディゾーンHoudini情報日本語ブログ](https://houdinifx.jp/blog/)
+
+#### 個人
+
+- [No More Retake](http://nomoreretake.net)
 
 ### Books
 
