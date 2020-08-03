@@ -61,8 +61,10 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="deep-orange" data-md-color-accent="orange">
   
+    
+      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -453,8 +455,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../VEX/basics/" title="Houdini VEX" class="md-nav__link">
-      Houdini VEX
+    <a href="../../VEX/basics/" title="Houdini VEX Basics" class="md-nav__link">
+      Houdini VEX Basics
     </a>
   </li>
 
@@ -509,8 +511,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../basics/" title="Houdini Python" class="md-nav__link">
-      Houdini Python
+    <a href="../python/" title="Houdini Python Basics" class="md-nav__link">
+      Houdini Python Basics
     </a>
   </li>
 
@@ -870,7 +872,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../basics/" title="Houdini Python" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../python/" title="Houdini Python Basics" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -879,7 +881,7 @@
                 <span class="md-footer-nav__direction">
                   前
                 </span>
-                Houdini Python
+                Houdini Python Basics
               </div>
             </div>
           </a>

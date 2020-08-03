@@ -61,8 +61,10 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="deep-orange" data-md-color-accent="orange">
   
+    
+      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -451,8 +453,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_Houdini/VEX/basics/" title="Houdini VEX" class="md-nav__link">
-      Houdini VEX
+    <a href="../../10_Houdini/VEX/basics/" title="Houdini VEX Basics" class="md-nav__link">
+      Houdini VEX Basics
     </a>
   </li>
 
@@ -505,8 +507,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../10_Houdini/Python/basics/" title="Houdini Python" class="md-nav__link">
-      Houdini Python
+    <a href="../../10_Houdini/Python/python/" title="Houdini Python Basics" class="md-nav__link">
+      Houdini Python Basics
     </a>
   </li>
 
@@ -704,33 +706,6 @@
           <li class="md-nav__item">
   <a href="#srcsamplecliclipy" class="md-nav__link">
     src/samplecli/cli.py
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pip-install_1" class="md-nav__link">
-    pip installをして試す
-  </a>
-  
-    <nav class="md-nav" aria-label="pip installをして試す">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pip-install_2" class="md-nav__link">
-    pip installする
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    コマンドを実行する
   </a>
   
 </li>
@@ -1023,33 +998,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#pip-install_1" class="md-nav__link">
-    pip installをして試す
-  </a>
-  
-    <nav class="md-nav" aria-label="pip installをして試す">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pip-install_2" class="md-nav__link">
-    pip installする
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    コマンドを実行する
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -1079,24 +1027,27 @@
 <h2 id="_1">基本<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <h3 id="pip-install">pip installできる環境を作る。<a class="headerlink" href="#pip-install" title="Permanent link">&para;</a></h3>
 <p>以下の様にインストールできる環境を作る。</p>
-<div class="highlight"><pre><span></span><code>pip install sample-cli
+<div class="codehilite"><pre><span></span><code>pip install sample-cli
 </code></pre></div>
+
 
 <p>GitHubなどにあげておいて、レポジトリから直接インストールする場合は次のような感じ。</p>
-<div class="highlight"><pre><span></span><code>pip install git+https://github.com/takavfx/sample-cli
+<div class="codehilite"><pre><span></span><code>pip install git+https://github.com/takavfx/sample-cli
 </code></pre></div>
+
 
 <h4 id="_2">ディレクトリ構成<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>- package_root
-    |- setup.py
-    |- src
-        |- samplecli
-            |- __init__.py
-            |- cli.py
+<div class="codehilite"><pre><span></span><code><span class="err">- package_root</span>
+<span class="err">    |- setup.py</span>
+<span class="err">    |- src</span>
+<span class="err">        |- samplecli</span>
+<span class="err">            |- __init__.py</span>
+<span class="err">            |- cli.py</span>
 </code></pre></div>
 
+
 <h3 id="setuppy">setup.pyを書く<a class="headerlink" href="#setuppy" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">os</span>
 <span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">find_packages</span>
 
 <span class="n">current_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
@@ -1112,12 +1063,15 @@
 <span class="p">]</span>
 
 <span class="n">about</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
-    <span class="n">exec</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">about</span><span class="p">)</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">current_dir</span><span class="p">,</span> <span class="s2">&quot;src&quot;</span><span class="p">,</span> <span class="s2">&quot;tatool&quot;</span><span class="p">,</span> <span class="s2">&quot;__init__.py&quot;</span><span class="p">),</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">exec</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="n">about</span><span class="p">)</span>
+
 
 <span class="n">setup</span><span class="p">(</span>
-    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;mytool-cli&quot;</span><span class="p">,</span>
-    <span class="n">url</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="n">about</span><span class="p">[</span><span class="s2">&quot;__title__&quot;</span><span class="p">],</span>
+    <span class="n">url</span><span class="o">=</span><span class="n">about</span><span class="p">[</span><span class="s2">&quot;__url__&quot;</span><span class="p">],</span>
+    <span class="n">version</span><span class="o">=</span><span class="n">about</span><span class="p">[</span><span class="s2">&quot;__version__&quot;</span><span class="p">],</span>
+    <span class="n">description</span><span class="o">=</span><span class="n">about</span><span class="p">[</span><span class="s2">&quot;__description__&quot;</span><span class="p">]</span>
     <span class="n">install_requires</span><span class="o">=</span><span class="n">requires</span><span class="p">,</span>
     <span class="n">python_requires</span><span class="o">=</span><span class="s2">&quot;&gt;=3.7.*, &lt;4&quot;</span><span class="p">,</span>
     <span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">(</span><span class="s2">&quot;src&quot;</span><span class="p">),</span>
@@ -1131,6 +1085,7 @@
 <span class="p">)</span>
 </code></pre></div>
 
+
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><a href="https://docs.python.org/ja/3/distutils/setupscript.html">setup.pyについて。</a></p>
@@ -1139,41 +1094,28 @@
 <p class="admonition-title">Note</p>
 <p>entry_points
 このentry_points辞書に、コンソールで入力した際の実行スクリプトを記述する。</p>
-<div class="highlight"><pre><span></span><code>&lt;command&gt; <span class="o">=</span> &lt;cliパッケージ&gt;.&lt;CLIモジュール&gt;:&lt;実行関数名&gt;
-</code></pre></div>
-
+<p><code>&lt;command&gt; = &lt;cliパッケージ&gt;.&lt;CLIモジュール&gt;:&lt;実行関数名&gt;</code></p>
 </div>
 <h3 id="_3">ソースを書く<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
 <h4 id="__init__py"><code>__init__.py</code><a class="headerlink" href="#__init__py" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="n">__title__</span> <span class="o">=</span> <span class="s2">&quot;sample-cli&quot;</span>
+<div class="codehilite"><pre><span></span><code><span class="n">__title__</span> <span class="o">=</span> <span class="s2">&quot;sample-cli&quot;</span>
 <span class="n">__version__</span> <span class="o">=</span> <span class="s2">&quot;1.0.0&quot;</span>
 <span class="n">__description__</span> <span class="o">=</span> <span class="s2">&quot;Sample python package for Command Line tool creation by Python&quot;</span>
 <span class="n">__url__</span> <span class="o">=</span> <span class="s2">&quot;https://github.com/takavfx/sample-cli&quot;</span>
 </code></pre></div>
 
+
 <h4 id="srcsamplecliclipy">src/samplecli/cli.py<a class="headerlink" href="#srcsamplecliclipy" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello, world&quot;</span><span class="p">)</span>
 </code></pre></div>
+
 
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>上記のサンプルseup.pyファイルで、 <code>"mytoolcli = mytoolcli.cli:main"</code> と宣言している。そのため、ここでは、コマンドライン上で <code>mytool</code> と実行すると、この <code>main()</code> 関数が呼ばれることになる。
 もし、別の関数を実行したい場合には、setup.pyの部分とこの <code>main()</code> 関数名を変更する。</p>
 </div>
-<h3 id="pip-install_1">pip installをして試す<a class="headerlink" href="#pip-install_1" title="Permanent link">&para;</a></h3>
-<h4 id="pip-install_2">pip installする<a class="headerlink" href="#pip-install_2" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>pip install -e .
-</code></pre></div>
-
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p><code>-e</code> は <code>--editable</code> オプションの略で、これを使用してインストールを行うと、ローカルの変更が即時インストール環境に反映される。開発時には有利だが、テスト時のimportテストなどを行う場合は誤動作を起こしやすいので注意。</p>
-</div>
-<h4 id="_4">コマンドを実行する<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code>mytool
-<span class="c1"># &gt; hello, world</span>
-</code></pre></div>
                 
               
               
