@@ -14,6 +14,8 @@
         <link rel="canonical" href="https://takavfx.github.io/Takanori-Note/40_mkdocs/">
       
       
+        <meta name="author" content="Takanori Kishikawa">
+      
       <link rel="shortcut icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.1">
     
@@ -61,10 +63,8 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="deep-orange" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-orange" data-md-color-accent="orange">
   
-    
-      <script>matchMedia("(prefers-color-scheme: dark)").matches&&document.body.setAttribute("data-md-color-scheme","slate")</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -453,8 +453,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../10_Houdini/VEX/basics/" title="Houdini VEX Basics" class="md-nav__link">
-      Houdini VEX Basics
+    <a href="../10_Houdini/VEX/basics/" title="Houdini VEX" class="md-nav__link">
+      Houdini VEX
     </a>
   </li>
 
@@ -507,8 +507,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../10_Houdini/Python/python/" title="Houdini Python Basics" class="md-nav__link">
-      Houdini Python Basics
+    <a href="../10_Houdini/Python/basics/" title="Houdini Python" class="md-nav__link">
+      Houdini Python
     </a>
   </li>
 
@@ -826,14 +826,41 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    プラグイン導入の基本
+    エクステンションを導入する
   </a>
   
-    <nav class="md-nav" aria-label="プラグイン導入の基本">
+    <nav class="md-nav" aria-label="エクステンションを導入する">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    エクステンションをインストールする
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocsmd" class="md-nav__link">
+    mkdocs.mdでエクステンションの使用を宣言する
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    プラグインを導入する
+  </a>
+  
+    <nav class="md-nav" aria-label="プラグインを導入する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     各種プラグインのパッケージをインストールする
   </a>
   
@@ -841,7 +868,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     インストール方法
   </a>
   
@@ -853,8 +880,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mkdocs_1" class="md-nav__link">
-    mkdocsでプラグインの使用を宣言する
+  <a href="#mkdocsmd_1" class="md-nav__link">
+    mkdocs.mdでプラグインの使用を宣言する
   </a>
   
 </li>
@@ -865,16 +892,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    マクロを入れる
+  <a href="#_6" class="md-nav__link">
+    マクロを導入する
   </a>
   
-    <nav class="md-nav" aria-label="マクロを入れる">
+    <nav class="md-nav" aria-label="マクロを導入する">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     プラグインをインストールする
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocsmd_2" class="md-nav__link">
+    mkdocs.mdで使用を宣言する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mainpy" class="md-nav__link">
+    main.pyを作成する
   </a>
   
 </li>
@@ -933,14 +974,41 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    プラグイン導入の基本
+    エクステンションを導入する
   </a>
   
-    <nav class="md-nav" aria-label="プラグイン導入の基本">
+    <nav class="md-nav" aria-label="エクステンションを導入する">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    エクステンションをインストールする
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocsmd" class="md-nav__link">
+    mkdocs.mdでエクステンションの使用を宣言する
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    プラグインを導入する
+  </a>
+  
+    <nav class="md-nav" aria-label="プラグインを導入する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     各種プラグインのパッケージをインストールする
   </a>
   
@@ -948,7 +1016,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     インストール方法
   </a>
   
@@ -960,8 +1028,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mkdocs_1" class="md-nav__link">
-    mkdocsでプラグインの使用を宣言する
+  <a href="#mkdocsmd_1" class="md-nav__link">
+    mkdocs.mdでプラグインの使用を宣言する
   </a>
   
 </li>
@@ -972,16 +1040,30 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    マクロを入れる
+  <a href="#_6" class="md-nav__link">
+    マクロを導入する
   </a>
   
-    <nav class="md-nav" aria-label="マクロを入れる">
+    <nav class="md-nav" aria-label="マクロを導入する">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     プラグインをインストールする
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocsmd_2" class="md-nav__link">
+    mkdocs.mdで使用を宣言する
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mainpy" class="md-nav__link">
+    main.pyを作成する
   </a>
   
 </li>
@@ -1012,8 +1094,34 @@
                 
                 
                 <h1 id="mkdocs">mkdocsセットアップ<a class="headerlink" href="#mkdocs" title="Permanent link">&para;</a></h1>
-<h2 id="_1">プラグイン導入の基本<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<h3 id="_2">各種プラグインのパッケージをインストールする<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h2 id="_1">エクステンションを導入する<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>エクステンションを導入することで、mkdocs自体のふるまいや、マークダウン記述の拡張を行って、絵文字を簡単に入力可能にしたり、キャレットを有効にしたりなど、ドキュメントの視認性を向上するなどに活用できる機能を数多く導入できる。
+こちらもかなりの数あるので、テストをしながら導入していくのをおススメ。</p>
+<h3 id="_2">エクステンションをインストールする<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>ものによってはmkdocs自体にデフォルトで入っていたり、テーマに付属してきたりするが、インストールを行うことでさらに機能拡張が行える。</p>
+<h3 id="mkdocsmd">mkdocs.mdでエクステンションの使用を宣言する<a class="headerlink" href="#mkdocsmd" title="Permanent link">&para;</a></h3>
+<p>mkdocs.mdで以下の様に記述をすれば使用可能になる。</p>
+<div class="highlight"><pre><span></span><code><span class="nt">extensions</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">admonition</span> <span class="c1"># アノテーションブロックを有効</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">codehilite</span> <span class="c1"># コードハイライトを有効</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">footnotes</span> <span class="c1"># 下部への注釈表記を有効</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">tables</span> <span class="c1"># テーブルを有効</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.arithmatex</span> <span class="c1"># Arithmatex統合を有効</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.mark</span> <span class="c1"># ハイライト機能を有効</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.details</span> <span class="c1"># 折り畳みアノテーションを有効</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.keys</span> <span class="c1"># キーショートカットの表示</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.tabbed</span> <span class="c1"># タブ表示の有効化</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">pymdownx.caret</span> <span class="c1"># キャレットを有効化</span>
+  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">fontawesome_markdown</span>
+  <span class="p p-Indicator">-</span> <span class="nt">markdown_blockdiag</span><span class="p">:</span> <span class="c1"># Makrkdownダイアグラムを有効</span>
+      <span class="nt">format</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">svg</span>
+  <span class="p p-Indicator">-</span> <span class="nt">pymdownx.emoji</span><span class="p">:</span> <span class="c1"># 絵文字を有効</span>
+        <span class="nt">emoji_index</span><span class="p">:</span> <span class="kt">!!python/name:materialx.emoji.twemoji</span>
+        <span class="nt">emoji_generator</span><span class="p">:</span> <span class="kt">!!python/name:materialx.emoji.to_svg</span>
+</code></pre></div>
+
+<h2 id="_3">プラグインを導入する<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">各種プラグインのパッケージをインストールする<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>プラグインは各自インストールしたり、テーマに付属しているものがある。
 例えば、mkdocs-materialテーマには独自のsearchプラグインが導入されていたりするため、個別インストールなしにこのプラグインを使用することができる。</p>
 <table>
@@ -1038,14 +1146,13 @@
 </tr>
 </tbody>
 </table>
-<h5 id="_3">インストール方法<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h5>
+<h5 id="_5">インストール方法<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h5>
 <p>基本的にはPIPインストールすることで動作環境を作る。(例: mkdocs-macros-plugin)</p>
-<div class="codehilite"><pre><span></span><code>pip install mkdocs-macros-plugin
+<div class="highlight"><pre><span></span><code>pip install mkdocs-macros-plugin
 </code></pre></div>
 
-
-<h3 id="mkdocs_1">mkdocsでプラグインの使用を宣言する<a class="headerlink" href="#mkdocs_1" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+<h3 id="mkdocsmd_1">mkdocs.mdでプラグインの使用を宣言する<a class="headerlink" href="#mkdocsmd_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="nt">search</span><span class="p">:</span>
       <span class="nt">separator</span><span class="p">:</span> <span class="s">&#39;[\s\-\.]+&#39;</span>
       <span class="nt">lang</span><span class="p">:</span>
@@ -1060,11 +1167,32 @@
             <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sys.path.append(&quot;src&quot;)</span>
 </code></pre></div>
 
-
-<h2 id="_4">マクロを入れる<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<h3 id="_5">プラグインをインストールする<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>pip install mkdocs-macros-plugin
+<h2 id="_6">マクロを導入する<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="_7">プラグインをインストールする<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>pip install mkdocs-macros-plugin
 </code></pre></div>
+
+<h3 id="mkdocsmd_2">mkdocs.mdで使用を宣言する<a class="headerlink" href="#mkdocsmd_2" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="nt">plugins</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">macros</span>
+</code></pre></div>
+
+<h3 id="mainpy">main.pyを作成する<a class="headerlink" href="#mainpy" title="Permanent link">&para;</a></h3>
+<p>main.pyをルートディレクトリに作成し、 <code>define_env(env)</code> 関数を作成する。</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">define_env</span><span class="p">(</span><span class="n">env</span><span class="p">):</span>
+    <span class="nd">@env</span><span class="o">.</span><span class="n">filter</span>
+    <span class="k">def</span> <span class="nf">vimeo</span><span class="p">(</span><span class="n">videoid</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;VimeoのVideoIDを引数にVimeoの埋め込みコンテンツを返す。</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;&lt;iframe src=&quot;https://player.vimeo.com/video/</span><span class="si">{</span><span class="n">videoid</span><span class="si">}</span><span class="s1">&quot;&#39;</span>\
+                <span class="s1">&#39;width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay;&#39;</span>\
+                <span class="s1">&#39;fullscreen&quot; allowfullscreen&gt;&lt;/iframe&gt;&#39;</span>
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ここら辺は、<a href="https://fereria.github.io/reincarnation_tech/10_Programming/99_Documentation/02_mkdocs_macro/">Reincanation+#Techの記事</a>が詳しいので、そちらを参照。</p>
+</div>
                 
               
               
