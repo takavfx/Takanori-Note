@@ -47,12 +47,15 @@ test_requirements = [
 ]
 
 about = {}
-with open("src", "r") as f:
-    exec(f, about)
+with open(os.path.join(current_dir, "src", "tatool", "__init__.py"), "r") as f:
+    exec(f.read(), about)
+
 
 setup(
-    name="mytool-cli",
-    url="",
+    name=about["__title__"],
+    url=about["__url__"],
+    version=about["__version__"],
+    description=about["__description__"]
     install_requires=requires,
     python_requires=">=3.7.*, <4",
     packages=find_packages("src"),
