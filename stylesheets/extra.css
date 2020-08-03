@@ -59,3 +59,8 @@ div.md-container h5 {
 div.admonition {
     margin-bottom: 15px;
 }
+
+/* Tableのスタイル変更 */
+.md-typeset table {
+    box-shadow: 0 0.2rem 1rem rgba(0,0,0,.05), 0 0 0.2rem rgba(0,0,0,0.3) !important;
+}
