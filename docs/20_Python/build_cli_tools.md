@@ -47,7 +47,7 @@ test_requirements = [
 ]
 
 about = {}
-with open(os.path.join(current_dir, "src", "tatool", "__init__.py"), "r") as f:
+with open(os.path.join(current_dir, "src", "samplecli", "__init__.py"), "r") as f:
     exec(f.read(), about)
 
 
