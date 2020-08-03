@@ -1,6 +1,8 @@
 site_name: TAKANORI NOTE
 site_description: "Automatic documentation from sources, for MkDocs."
 site_url: https://takavfx.github.io/Takanori-Note/
+site_author: Takanori Kishikawa
+
 repo_url: "https://github.com/takavfx/Takanori-Note"
 repo_name: "takavfx/Takanori-Note"
 
@@ -14,7 +16,7 @@ theme:
   language: ja
   name: material
   palette:
-    scheme: preference
+    scheme: slate
     primary: deep orange
     accent: orange
 
@@ -32,10 +34,10 @@ nav:
   - Houdini:
     - Houdini: 10_Houdini/index.md
     - Houdini VEX:
-      - Houdini VEX Basics: 10_Houdini/VEX/basics.md
+      - Houdini VEX: 10_Houdini/VEX/basics.md
       - Houdini VEX Snippets: 10_Houdini/VEX/snippets.md
     - Houdini Python:
-      - Houdini Python Basics: 10_Houdini/Python/python.md
+      - Houdini Python: 10_Houdini/Python/basics.md
       - Houdini Python Snippets: 10_Houdini/Python/snippets.md
   # - Maya:
   #   - Home: 10_Maya/index.md
@@ -67,12 +69,17 @@ markdown_extensions:
   - pymdownx.mark # ハイライト機能を有効
   - pymdownx.details # 折り畳みアノテーションを有効
   - pymdownx.keys # キーショートカットの表示
+  - pymdownx.tabbed # タブ表示の有効化
+  - pymdownx.caret # キャレットを有効化
+  - pymdownx.tasklist # タスクリスト表示を有効
+  - pymdownx.superfences # admonitionブロック内で複数行の記述を有効
+  - pymdownx.tilde # チルダ表記を有効
+  - fontawesome_markdown # :<id>:を使用して絵文字の入力できる機能を有効
   - markdown_blockdiag: # Makrkdownダイアグラムを有効
       format: svg
   - pymdownx.emoji: # 絵文字を有効
         emoji_index: !!python/name:materialx.emoji.twemoji
         emoji_generator: !!python/name:materialx.emoji.to_svg
-  # - pymdownx.emoji/fontawesome_markdow
   - toc:
       permalink: true # パーマリンクを有効
   # - awesome-pages
