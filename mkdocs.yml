@@ -48,6 +48,9 @@ nav:
       - Python: 20_Python/index.md
       - Build Python Packages: 20_Python/build_python_packages.md
       - Build CLI Tools: 20_Python/build_cli_tools.md
+    - Shader:
+      - HLSL:
+        - Maya HLSL: 20_Shader/10_HLSL/maya.md
   # - Pipeline:
   #   - Pipeline: 20_Pipeline/index.md
   - Research:
