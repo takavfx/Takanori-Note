@@ -39,6 +39,8 @@ nav:
     - Houdini Python:
       - Houdini Python: 10_Houdini/Python/basics.md
       - Houdini Python Snippets: 10_Houdini/Python/snippets.md
+    - Houdini C++:
+      - Houdini C++: 10_Houdini/CPP/basics.md
   # - Maya:
   #   - Home: 10_Maya/index.md
   - Programming:
