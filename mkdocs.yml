@@ -54,6 +54,9 @@ nav:
         - Webpack: 20_Web/10_BuildTools/Webpack/index.md 
       - Libraries:
         - Three.js: 20_Web/20_Libraries/ThreeJS/index.md
+    - Shader:
+      - HLSL:
+        - Maya HLSL: 20_Shader/10_HLSL/maya.md
   # - Pipeline:
   #   - Pipeline: 20_Pipeline/index.md
   - Research:
