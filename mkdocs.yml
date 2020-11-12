@@ -24,6 +24,7 @@ extra_css:
   - https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
   - stylesheets/extra.css
 
+
 # Navigation
 nav:
   - Home:
@@ -48,6 +49,11 @@ nav:
       - Python: 20_Python/index.md
       - Build Python Packages: 20_Python/build_python_packages.md
       - Build CLI Tools: 20_Python/build_cli_tools.md
+    - Web:
+      - BuildTools:
+        - Webpack: 20_Web/10_BuildTools/Webpack/index.md 
+      - Libraries:
+        - Three.js: 20_Web/20_Libraries/ThreeJS/index.md
   # - Pipeline:
   #   - Pipeline: 20_Pipeline/index.md
   - Research:
@@ -123,7 +129,7 @@ extra:
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
-
+  - javascripts/extra.js
 
 # Google Analytics
 google_analytics:
