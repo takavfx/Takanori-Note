@@ -11,7 +11,7 @@
         <meta name="description" content="Automatic documentation from sources, for MkDocs.">
       
       
-        <link rel="canonical" href="https://takavfx.github.io/Takanori-Note/20_Shader/10_HLSL/basics/">
+        <link rel="canonical" href="https://takavfx.github.io/Takanori-Note/20_Web/10_BuildTools/Webpack/">
       
       
         <meta name="author" content="Takanori Kishikawa">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Basics - TAKANORI NOTE</title>
+        <title>Webpack - TAKANORI NOTE</title>
       
     
     
@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#webpack" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -95,7 +100,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Basics
+              Webpack
             
           </span>
         </div>
@@ -157,7 +162,9 @@
         
           
 
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
@@ -551,10 +558,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Programming
@@ -642,10 +651,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     
     <label class="md-nav__link" for="nav-4-2">
       Web
@@ -667,10 +678,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-1" type="checkbox" id="nav-4-2-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-1" type="checkbox" id="nav-4-2-1" checked>
     
     <label class="md-nav__link" for="nav-4-2-1">
       BuildTools
@@ -692,11 +705,73 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../20_Web/10_BuildTools/Webpack/" title="Webpack" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Webpack
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Webpack" class="md-nav__link md-nav__link--active">
       Webpack
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#webpack_1" class="md-nav__link">
+    Webpack環境の準備
+  </a>
+  
+    <nav class="md-nav" aria-label="Webpack環境の準備">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    プロジェクトの作成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webpackwebpack-cliwebpack-dev-server" class="md-nav__link">
+    WebpackとWebpack CLI，Webpack Dev Serverのインストール
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -736,7 +811,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../20_Web/20_Libraries/ThreeJS/" title="Three.js" class="md-nav__link">
+    <a href="../../20_Libraries/ThreeJS/" title="Three.js" class="md-nav__link">
       Three.js
     </a>
   </li>
@@ -808,7 +883,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../maya/" title="Maya HLSL" class="md-nav__link">
+    <a href="../../../20_Shader/10_HLSL/maya/" title="Maya HLSL" class="md-nav__link">
       Maya HLSL
     </a>
   </li>
@@ -1136,12 +1211,64 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#webpack_1" class="md-nav__link">
+    Webpack環境の準備
+  </a>
+  
+    <nav class="md-nav" aria-label="Webpack環境の準備">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    プロジェクトの作成
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#webpackwebpack-cliwebpack-dev-server" class="md-nav__link">
+    WebpackとWebpack CLI，Webpack Dev Serverのインストール
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/takavfx/Takanori-Note/edit/master/docs/20_Shader/10_HLSL/basics.md" title="編集" class="md-content__button md-icon">
+                  <a href="https://github.com/takavfx/Takanori-Note/edit/master/docs/20_Web/10_BuildTools/Webpack/index.md" title="編集" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -1149,9 +1276,39 @@
                   
                 
                 
-                  <h1>Basics</h1>
-                
-                
+                <h1 id="webpack">Webpack<a class="headerlink" href="#webpack" title="Permanent link">&para;</a></h1>
+<h2 id="webpack_1">Webpack環境の準備<a class="headerlink" href="#webpack_1" title="Permanent link">&para;</a></h2>
+<h3 id="_1">プロジェクトの作成<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>プロジェクトの作成コマンド
+mkdir webpack-project
+<span class="nb">cd</span> webpack-project
+npm init -y
+</code></pre></div>
+
+<p>アウトプット
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+  <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;webpack-project&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;1.0.0&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;main&quot;</span><span class="p">:</span> <span class="s2">&quot;index.js&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;scripts&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;test&quot;</span><span class="p">:</span> <span class="s2">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;keywords&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="nt">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;license&quot;</span><span class="p">:</span> <span class="s2">&quot;ISC&quot;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<h3 id="webpackwebpack-cliwebpack-dev-server">WebpackとWebpack CLI，Webpack Dev Serverのインストール<a class="headerlink" href="#webpackwebpack-cliwebpack-dev-server" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>npm install --save-dev webpack webpack-cli webpack-dev-server
+npx webpack init
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>ここでWebpackプロジェクトを作成する際にどの環境を作るかを選択できる。
+JavaScript/TypeScriptやCSS/SASSの選択など。</p>
+</div>
                 
               
               
@@ -1166,6 +1323,41 @@
       
         
 <footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../../20_Python/build_cli_tools/" title="Build CLI Tools" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  前
+                </span>
+                Build CLI Tools
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../../20_Libraries/ThreeJS/" title="Three.js" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  次
+                </span>
+                Three.js
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">

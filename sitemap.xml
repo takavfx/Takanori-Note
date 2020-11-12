@@ -1,71 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://takavfx.github.io/Takanori-Note/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/00_About/about_this/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/00_About/about_me/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/10_Houdini/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/10_Houdini/VEX/basics/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/10_Houdini/VEX/snippets/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/10_Houdini/Python/basics/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/10_Houdini/Python/snippets/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/20_Python/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/20_Python/build_python_packages/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/20_Python/build_cli_tools/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://takavfx.github.io/Takanori-Note/20_Web/10_BuildTools/Webpack/</loc>
+     <lastmod>2020-11-12</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://takavfx.github.io/Takanori-Note/20_Web/20_Libraries/ThreeJS/</loc>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/20_Shader/10_HLSL/maya/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/30_MachineLearning/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/30_MachineLearning/20_TensorFlow/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/30_MachineLearning/20_TensorFlow/cpp/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/40_VSCode/extensions/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://takavfx.github.io/Takanori-Note/40_mkdocs/</loc>
-     <lastmod>2020-08-04</lastmod>
+     <lastmod>2020-11-12</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
