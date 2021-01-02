@@ -12,4 +12,5 @@
 
 このサイト意外にも、以下の場所にて技術情報を残しています。
 
-- [Qiita](https://qiita.com)
+- [Zenn](https://zenn.dev/takanori_k)
+- [Qiita](https://qiita.com/takavfx)
